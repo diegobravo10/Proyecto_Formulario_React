@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1C3958;
+  }
+
+.app
+{
+    background-color: #1C3958;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* ← Apila en vertical */
+    align-items: center;
+    height: 100vh;
+
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 23%;
+    width: 100%;         /* ← esto es clave */
+    max-width: 1200px; 
+    margin-top: 1%;  /* opcional, por si querés un límite */
+  }
+
+.titulo{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;       
+    text-decoration: underline;
+    text-decoration-color: #0570fc;;
+    
+    
+}
+
+.botones {
+    display: flex; /* o grid */
+    gap: 130px;
+}
+
+.boton{
+    color: rgb(0, 0, 0);
+    border-color: rgb(47, 186, 146);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 30px;
+    background: rgb(135, 209, 141);
+    border: none;
+}
+.contenedor {
+    display: block;
+  }
+  
+  .divs {
+    display: inline-block; /* Hace que sean independientes en tamaño */
+    width: auto;
+  }

@@ -1,0 +1,87 @@
+.formul{
+    gap: 30px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: center;
+
+}
+
+.entrada{
+    border-radius: 10px;
+    border-color: aquamarine;
+    padding: 15px;
+    font-size: 25px;
+
+    
+
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: rgb(38, 150, 142);
+    color: azure;
+    font-size: 25px;
+    padding: 15px;
+    border: none;
+
+}
+
+.universidadesList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+  }
+  
+  .universidadItem {
+    display: flex;
+    align-items: center;
+    background-color: #6499ae;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .bulletPoint {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  
+  .nombreUniversidad {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    flex-grow: 1;
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .botones {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btnEditar {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(118, 178, 118);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .btnEliminar {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(181, 107, 98);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+
+

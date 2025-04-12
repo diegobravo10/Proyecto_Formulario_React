@@ -1,0 +1,100 @@
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Valor alto para asegurar que esté por encima de todo */
+  }
+  
+  .modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    z-index: 1001;
+    /* Opcional: añadir animación */
+    animation: modalFadeIn 0.3s ease-out;
+  }
+  
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .botones {
+    display: flex;
+    gap: 30px;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 30px;
+  }
+
+  .btnC{
+    border-radius: 5px;
+    background-color: rgb(156, 212, 235);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .btnG{
+    border-radius: 5px;
+    background-color: rgb(133, 212, 137);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+  .entrada {
+    width: 70%;
+    font-size: 20px;
+    padding: 10px; /* Añadir espacio interno para mejor apariencia */
+    border: 2px solid rgb(129, 201, 129); /* Define grosor y color del borde */
+    border-radius: 5px;
+    outline: none; /* Quita el borde azul predeterminado */
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* Suaviza las transiciones */
+    
+    &:focus {
+      border-color: rgb(89, 161, 89); /* Color más oscuro al seleccionar */
+      box-shadow: 0 0 10px rgba(129, 201, 129, 0.5); /* Efecto de sombra */
+    }
+    
+    &:hover {
+      background-color: rgba(129, 201, 129, 0.1); /* Efecto visual al pasar el mouse */
+    }
+  }
+
+  .btnEliminar{
+    padding: 10px;
+    background: rgb(211, 97, 97);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
